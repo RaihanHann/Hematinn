@@ -24,4 +24,4 @@ Hematinn adalah aplikasi Android sederhana yang dirancang untuk membantu penggun
 - Dukungan untuk beberapa tujuan keuangan.
 - Kategori untuk setiap transaksi.
 - Visualisasi data menggunakan grafik atau chart.
-- Fitur backup dan restore data ke cloud.
+- Fitur backup dan restore data ke lokal.
