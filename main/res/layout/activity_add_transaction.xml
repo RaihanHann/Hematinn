@@ -1,0 +1,58 @@
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tv_add_transaction_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="📝 Tambah Transaksi"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"/>
+
+    <RadioGroup
+        android:id="@+id/rg_jenis"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp">
+        <RadioButton android:id="@+id/rb_pemasukan" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Pemasukan" android:checked="true" android:layout_marginEnd="16dp"/>
+        <RadioButton android:id="@+id/rb_pengeluaran" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Pengeluaran"/>
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/et_jumlah"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Jumlah (Rp)"
+        android:inputType="numberDecimal"
+        android:layout_marginBottom="8dp"/>
+
+    <EditText
+        android:id="@+id/et_bank_akun"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Bank/Akun (Contoh: Cash, Bank BCA)"
+        android:inputType="text"
+        android:layout_marginBottom="8dp"/>
+
+    <EditText
+        android:id="@+id/et_deskripsi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Deskripsi (Uang dari mana/Untuk apa)"
+        android:inputType="textMultiLine"
+        android:minLines="3"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/btn_simpan_transaksi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SIMPAN TRANSAKSI"/>
+
+</LinearLayout>
